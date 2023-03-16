@@ -5,6 +5,7 @@ import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Experience from "./components/Experience/Experience";
 import Projects from "./components/Projects/Projects";
+import Blogs from "./components/Blogs/Blogs";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
 import ScrollButton from "./components/ScrollButton/ScrollButton";
@@ -43,6 +44,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/resume" element={<Resume />} />
+          <Route path="/blog" element={<Blogs />} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer />

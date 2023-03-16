@@ -1,6 +1,4 @@
 import React from "react";
-import Button from "react-bootstrap/Button";
-import { AiOutlineDownload } from "react-icons/ai";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/sunakshi_home_page_doodle.png";
 import Particle from "../Particle";
@@ -29,20 +27,10 @@ function Home() {
                 <strong className="main-name"> SUNAKSHI TEJWANI</strong>
               </h1>
 
-              <div style={{ padding: 50, textAlign: "left" }}>
+              <div style={{ paddingLeft:50, paddingBottom:30, textAlign: "left" }}>
                 <Type />
               </div>
-              <div style={{ paddingLeft: 50, textAlign: "left" }}>
-                <Button
-                  variant="primary"
-                  href={pdf}
-                  target="_blank"
-                  style={{ maxWidth: "250px" }}
-                >
-                  <AiOutlineDownload />
-                  &nbsp; Download Resume
-                </Button>
-              </div>
+              
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>

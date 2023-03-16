@@ -2,12 +2,15 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/sunakshi_tejwani.png";
 import Tilt from "react-parallax-tilt";
+import Button from "react-bootstrap/Button";
+import { AiOutlineDownload } from "react-icons/ai";
 import {
   AiFillGithub,
   AiOutlineTwitter,
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import pdf from "../../Assets/../Assets/Sunakshi_Tejwani_PM_MU_Resume_2023.pdf";
 
 function Home2() {
   return (
@@ -51,6 +54,17 @@ function Home2() {
                 <b className="purple"> React.js and Next.js</b>
               </i>
             </p>
+            <div style={{ paddingLeft: 50, textAlign: "left" }}>
+                <Button
+                  variant="primary"
+                  href={pdf}
+                  target="_blank"
+                  style={{ maxWidth: "250px" }}
+                >
+                  <AiOutlineDownload />
+                  &nbsp; Download Resume
+                </Button>
+              </div>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>

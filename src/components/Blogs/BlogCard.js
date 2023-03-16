@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
 
-function ProjectCards(props) {
+function BlogCard(props) {
   return (
     <Card className="project-card-view">
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
@@ -15,7 +15,7 @@ function ProjectCards(props) {
         </Card.Text>
         <Button variant="primary" href={props.ghLink} target="_blank">
           {/* <BsGithub /> &nbsp; */}
-          {props.isBlog ? "Blog" : "Project Link"}
+          {props.isBlog ? "Blog" : "Blog Link"}
         </Button>
         {"\n"}
         {"\n"}
@@ -37,4 +37,4 @@ function ProjectCards(props) {
     </Card>
   );
 }
-export default ProjectCards;
+export default BlogCard;
