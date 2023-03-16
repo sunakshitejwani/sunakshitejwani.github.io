@@ -1,9 +1,13 @@
 import React from "react";
+import Button from "react-bootstrap/Button";
+import { AiOutlineDownload } from "react-icons/ai";
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/home-main.svg";
+import homeLogo from "../../Assets/sunakshi_home_page_doodle.png";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
+import Tilt from "react-parallax-tilt";
+import pdf from "../../Assets/../Assets/Sunakshi_Tejwani_PM_MU_Resume_2023.pdf";
 
 function Home() {
   return (
@@ -22,21 +26,34 @@ function Home() {
 
               <h1 className="heading-name">
                 I'M
-                <strong className="main-name"> SOUMYAJIT BEHERA</strong>
+                <strong className="main-name"> SUNAKSHI TEJWANI</strong>
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
               </div>
+              <div style={{ paddingLeft: 50, textAlign: "left" }}>
+                <Button
+                  variant="primary"
+                  href={pdf}
+                  target="_blank"
+                  style={{ maxWidth: "250px" }}
+                >
+                  <AiOutlineDownload />
+                  &nbsp; Download Resume
+                </Button>
+              </div>
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>
-              <img
-                src={homeLogo}
-                alt="home pic"
-                className="img-fluid"
-                style={{ maxHeight: "450px" }}
-              />
+              <Tilt>
+                <img
+                  src={homeLogo}
+                  alt="home pic"
+                  className="img-fluid imgHome"
+                  style={{ maxHeight: "450px" }}
+                />
+              </Tilt>
             </Col>
           </Row>
         </Container>
