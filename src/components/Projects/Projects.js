@@ -82,8 +82,8 @@ function Projects() {
               isBlog={false}
               title="Project 6"
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pellentesque auctor congue. Sed tincidunt ullamcorper tellus sed euismod. Nulla vitae odio quam. Fusce id dui a tortor hendrerit varius. Nunc eu justo sit amet urna convallis gravida. Quisque placerat velit leo, id lobortis velit luctus non. Ut varius nibh justo, blandit placerat quam volutpat ut. Nunc at efficitur ante. Etiam ullamcorper mollis nisl. Quisque in consectetur felis, porta dapibus urna. Maecenas accumsan laoreet iaculis."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              ghLink=""
+              // demoLink=""      <--------Please include a demo link here 
             />
           </Col>
         </Row>
